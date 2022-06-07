@@ -5,3 +5,11 @@
     {{estudante.name}}
     </a>
 </div>
+
+<h2>Professores</h2>
+<div class="estudantes-menu">
+    <a *ngFor="let professor of professores"
+    routerLink="/details/{{professor.id}}">
+    {{professor.name}}
+    </a>
+</div>

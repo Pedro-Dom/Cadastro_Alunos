@@ -6,6 +6,9 @@
       <label for="estudante-name">Nome do Estudante: </label>
       <input id="estudante-name" [(ngModel)]="estudante.name" placeholder="name">
     </div>
+    <div class="white"><span>Curso: </span>{{estudante.curso}}</div>
+    <div class="white"><span>Idade: </span>{{estudante.idade}}</div>
+    <div class="white"><span>Semestre: </span>{{estudante.semestre}}</div>
   
     <button type="button" (click)="goBack()">Voltar</button>
 

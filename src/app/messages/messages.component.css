@@ -20,6 +20,7 @@ h2 {
   }
 
   .messages {
+    color: honeydew;
     position: absolute;
     bottom: 2%;
     left: 1%;

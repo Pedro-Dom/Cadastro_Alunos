@@ -13,7 +13,7 @@ export class ProfessorService {
 
   getProfessores(): Observable<Professor[]> {
     const professores = of(PROFESSORES);
-    this.messageService.add('HeroService: fetched professores');
+    this.messageService.add('AdviceService: fetched professores');
     return professores;
   }
 

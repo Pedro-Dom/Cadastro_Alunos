@@ -1,8 +1,11 @@
-<div class="textos" *ngIf="professor">
-  <h2>{{professor.name | uppercase}} Detalhes</h2>
-  <div>id: {{professor.id}}</div>
-  <div>
-    <label for="professor-name">Professor name: </label>
+<div class="details" *ngIf="professor">
+
+  <h2>{{professor.name}} Details</h2>
+  <div class="white"><span>ID: </span>{{professor.id}}</div>
+  <div class="label">
+    <label for="professor-name">Nome do professor: </label>
     <input id="professor-name" [(ngModel)]="professor.name" placeholder="name">
-  </div>
+  <div class="white"><span>Matéria: </span>{{professor.class}}</div>
+  <button type="button" (click)="goBack()">Voltar</button>
+
 </div>
