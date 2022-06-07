@@ -14,7 +14,7 @@ export class EstudantesComponent implements OnInit {
 
   estudantes: Estudante[] = [];
 
-  //constructor(private estudanteService: EstudantesService, private messageService: MessageService) { }
+  constructor(private estudanteService: EstudanteService, private messageService: MessageService) { }
 
   ngOnInit(): void {
     this.getEstudantes();
