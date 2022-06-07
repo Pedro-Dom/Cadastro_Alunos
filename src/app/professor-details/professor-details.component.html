@@ -1,0 +1,8 @@
+<div class="textos" *ngIf="professor">
+  <h2>{{professor.name | uppercase}} Detalhes</h2>
+  <div>id: {{professor.id}}</div>
+  <div>
+    <label for="professor-name">Professor name: </label>
+    <input id="professor-name" [(ngModel)]="professor.name" placeholder="name">
+  </div>
+</div>

@@ -1,15 +1,14 @@
 <h2>Estudantes Cadastrados</h2>
 <ul class="estudantes">
   <li *ngFor="let estudante of estudantes">
-    <button [class.selected]="estudante === selectedEstudante" type="button" (click)="onSelect(estudante)">
-      <span class="badge">{{estudante.id}}</span>
-      <span class="name">{{estudante.name}}</span>
-    </button>
+    <a routerLink="/detail/{{estudante.id}}">
+      <span class="badge">{{estudante.id}}</span> {{estudante.name}}
+    </a>
   </li>
 </ul>
 
 <div class="textos" *ngIf="selectedEstudante">
-  <h2>{{selectedEstudante.name | uppercase}} Details</h2>
+  <h2>{{selectedEstudante.name | uppercase}} Detalhes</h2>
   <div>id: {{selectedEstudante.id}}</div>
   <div>
     <label for="estudante-name">Estudante name: </label>

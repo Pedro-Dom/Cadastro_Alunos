@@ -5,6 +5,10 @@ import { AppComponent } from './app.component';
 import { EstudantesComponent } from './estudantes/estudantes.component';
 import { MessagesComponent } from './messages/messages.component';
 import { EstudanteDetailComponent } from './estudante-detail/estudante-detail.component';
+import { AppRoutingModule } from './app-routing.module';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { ProfessoresComponent } from './professores/professores.component';
+import { ProfessorDetailsComponent } from './professor-details/professor-details.component';
 
 @NgModule({
   declarations: [
@@ -12,10 +16,14 @@ import { EstudanteDetailComponent } from './estudante-detail/estudante-detail.co
     EstudantesComponent,
     MessagesComponent,
     EstudanteDetailComponent,
+    DashboardComponent,
+    ProfessoresComponent,
+    ProfessorDetailsComponent
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,17 @@
+<h2>Professores Cadastrados</h2>
+<ul class="professores">
+    <li *ngFor="let professor of professores">
+      <a routerLink="/detail/{{professor.id}}">
+        <span class="badge">{{professor.id}}</span> {{professor.name}}
+      </a>
+    </li>
+  </ul>
+
+  <div class="textos" *ngIf="selectedProfessor">
+    <h2>{{selectedProfessor.name | uppercase}} Detalhes</h2>
+    <div>id: {{selectedProfessor.id}}</div>
+    <div>
+      <label for="professor-name">Nome do professor: </label>
+      <input id="professor-name" [(ngModel)]="selectedProfessor.name" placeholder="name">
+    </div>
+  </div>

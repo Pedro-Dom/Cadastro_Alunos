@@ -7,7 +7,7 @@ h2 {
     color: honeydew; 
 }
 
-.estudantes {
+.professores {
     display: flex;
     flex-direction: column;
     margin: auto;
@@ -16,12 +16,12 @@ h2 {
     width: 20em;
   }
   
-.estudantes li {
+.professores li {
     display: flex;
     height: 30px;
   }
   
-.estudantes button {
+.professores button {
     flex: 1;
     cursor: pointer;
     position: relative;
@@ -35,33 +35,33 @@ h2 {
     height: 3em;
   }
   
-.estudantes button:hover {
+.professores button:hover {
     color: black;
     background-color: honeydew;
     left: .1em;
   }
   
-.estudantes button:active {
+.professores button:active {
     background-color: #525252;
     color: #fafafa;
   }
   
-.estudantes button.selected {
+.professores button.selected {
     background-color: black;
     color: honeydew;
   }
   
-.estudantes button.selected:hover {
+.professores button.selected:hover {
     background-color: #505050;
     color: honeydew;
   }
   
-.estudantes button.selected:active {
+.professores button.selected:active {
     background-color: black;
     color: honeydew;
   }
   
-.estudantes .badge {
+.professores .badge {
     display: inline-block;
     font-size: small;
     color: honeydew;
@@ -72,7 +72,7 @@ h2 {
     border-radius: 4px 0 0 4px;
   }
   
-.estudantes .name {
+.professores .name {
     align-self: center;
   }
 

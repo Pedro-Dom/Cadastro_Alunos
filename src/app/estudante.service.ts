@@ -13,7 +13,15 @@ export class EstudanteService {
 
   getEstudantes(): Observable<Estudante[]> {
     const estudantes = of(ESTUDANTES);
-    this.messageService.add('EstudanteService: fetched estudantes');
+    this.messageService.add('HeroService: fetched estudantes');
     return estudantes;
+  }
+
+  getEstudante(id: number): Observable<Estudante> {
+    // For now, assume that a hero with the specified `id` always exists.
+    // Error handling will be added in the next step of the tutorial.
+    const estudante = ESTUDANTES.find(h => h.id === id)!;
+    this.messageService.add(`EstudanteService: fetched estudante id=${id}`);
+    return of(estudante);
   }
 }
