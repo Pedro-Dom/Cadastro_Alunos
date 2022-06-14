@@ -1,0 +1,24 @@
+h2 {
+    margin-top: 100px;
+    color: honeydew;
+}
+
+span, label {
+    color: honeydew;
+}
+
+button {
+    margin-top: 20px;
+    margin-bottom: 200px;
+    height: 40px;
+    width: 50px;
+}
+
+.details {
+    align-items: center;
+    margin-left: 40%;
+}
+
+.white {
+ color: honeydew;
+}

@@ -1,0 +1,22 @@
+<div class="details">
+    <h2>{{estudante.name}} Criar</h2>
+    <div class="label">
+      <label for="estudante-name">Nome do Estudante: </label>
+      <input id="estudante-name" [(ngModel)]="estudante.name" placeholder="name">
+    </div>
+    <div class="label">
+      <label for="estudante-name">Curso: </label>
+      <input id="estudante-name" [(ngModel)]="estudante.curso" placeholder="curso">
+    </div>
+    <div class="label">
+      <label for="estudante-name">Idade: </label>
+      <input id="estudante-name" [(ngModel)]="estudante.idade" placeholder="idade">
+    </div>
+    <div class="label">
+      <label for="estudante-name">Semestre: </label>
+      <input id="estudante-name" [(ngModel)]="estudante.semestre" placeholder="semestre">
+    </div>
+  
+    <button type="button" (click)="goBack()">Voltar</button>
+    <button type="button" (click)="createEstudante()">Create</button>
+</div>

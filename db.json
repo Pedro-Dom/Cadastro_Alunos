@@ -1,0 +1,49 @@
+{
+  "estudantes": [
+    {
+      "id": 1,
+      "name": "Pedro",
+      "curso": "Análise de Sistemas",
+      "idade": 19,
+      "semestre": 3
+    },
+    {
+      "id": 2,
+      "name": "Nickolas",
+      "curso": "Gestão Empresarial",
+      "idade": 21,
+      "semestre": 1
+    },
+    {
+      "id": 3,
+      "name": "Navarro",
+      "curso": "Análise de Sistemas",
+      "idade": 22,
+      "semestre": 4
+    },
+    {
+      "name": "HAHAHAHAH",
+      "curso": "OK",
+      "idade": "13",
+      "semestre": "1",
+      "id": 5
+    }
+  ],
+  "professores": [
+    {
+      "id": 11,
+      "name": "Glauco",
+      "class": "Eletiva"
+    },
+    {
+      "id": 12,
+      "name": "Celso",
+      "class": "Sistemas Operacionais"
+    },
+    {
+      "id": 13,
+      "name": "Tadeu",
+      "class": "Estrutura de Dados"
+    }
+  ]
+}

@@ -3,6 +3,7 @@ import { Estudante } from '../estudante';
 import { ActivatedRoute } from '@angular/router';
 import { Location } from '@angular/common';
 import { EstudanteService } from '../estudante.service';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-estudante-detail',
@@ -11,7 +12,12 @@ import { EstudanteService } from '../estudante.service';
 })
 export class EstudanteDetailComponent implements OnInit {
 
-  @Input() estudante?: Estudante;
+  estudante: Estudante = {
+    name: "",
+    curso: "",
+    idade: 0,
+    semestre: 0,
+  }
 
   constructor(
     private route: ActivatedRoute,
@@ -31,6 +37,19 @@ export class EstudanteDetailComponent implements OnInit {
 
   goBack(): void {
     this.location.back();
+  }
+
+  save(): void {
+    if (this.estudante) {
+      this.estudanteService.updateEstudante(this.estudante)
+        .subscribe(() => this.goBack());
+    }
+  }
+
+  deleteEstudante(): void{
+    this.estudanteService.deleteEstudante(this.estudante.id).subscribe(() => {
+      this.goBack()
+    })
   }
 
 }
